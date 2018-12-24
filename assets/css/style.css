@@ -1,0 +1,576 @@
+/*
+Template Name: Calculator Landign Page Template;
+Autor:Dipankar Roy;
+Meta Tag:Landing page template, web template,;
+
+CSS Indexing:
+* Base CSS
+* Header CSS
+* Category Area CSS
+* Banner CSS
+* Footer Area CSS
+* Offcanvas Menu CSS
+* Footer Absolute CSS
+* Preloader CSS
+
+ */
+
+ /* =====================
+ Base CSS
+ ========================*/
+a:focus, input:focus, textarea:focus, button:focus{outline:0 solid;}
+img{
+	max-width:100%;
+	height:auto;
+}
+a:hover{text-decoration:none;color:#333;}
+
+h1, h2, h3, h4, h5, h6{
+	margin:0 0 15px;
+	font-weight:700;
+	font-family:;
+}
+p{margin:0 0 15px;}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	color:#808080;
+	font-weight:400;
+	line-height:22px;
+
+}
+.section-padding-50{
+    padding:50px 0;
+}
+ /* =====================
+ Base CSS End
+ ========================*/
+
+.service-header-title h2:before, .template-preloader-wrap, .search-title, .content-text h2:before, .content-bg-overlay:before{
+	background: #ff626b;
+background: -moz-linear-gradient(left, #ff626b 0%, #f6ad06 100%);
+background: -webkit-linear-gradient(left, #ff626b 0%,#f6ad06 100%);
+background: linear-gradient(to right, #ff626b 0%,#f6ad06 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff626b', endColorstr='#f6ad06',GradientType=1 );
+}
+
+ /* =====================
+ Header CSS
+ ========================*/
+
+.header-area {
+    padding: 10px 0;
+    box-shadow: 0 0px 35px 5px #e7e7e7;
+}
+.search-area .search-title {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    border-radius: 50px;
+    width: 42%;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+.search-area {
+    padding: 40px 0;
+}
+.logo img {
+    width: 320px;
+}
+
+.header-right .menu-trigger img {
+    width: 40px;
+}
+
+.menu-trigger span {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.ext-menu {
+    display: none;
+}
+
+.header-right {
+    position: relative;
+}
+
+.header-right form {
+    position: absolute;
+    right: 15%;
+    top: 15px;
+    width: 100%;
+}
+
+input[type=search] {
+    border: 1px solid #FA843C;
+    padding: 8px 20px;
+    width: 40%;
+    border-radius: 30px;
+    background-image: url(../icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50px 20px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+input[type=search]:focus {
+  width: 60%;
+}
+
+.header-right .menu-trigger {
+    margin-top: 14px;
+    display: inline-block;
+}
+.search-form input {
+    width: 100%;
+}
+
+ /* =====================
+Category Area CSS
+ ========================*/
+.category-left-title img {
+    width: 40px;
+    background-color: #ff626b;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.category-area {
+    padding: 60px 0;
+}
+
+.category-left-title, .category-right-title {
+    font-size: 27px;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.category-left-title a, .category-right-title a {
+    color: #666666;
+    transition:.3s;
+}
+.single-category-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.category-right-title:before {
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    width: 30px;
+    height: 8px;
+    content: '';
+    background-color: #ff626b;
+    border-radius: 7px 7px 0px 0px;
+    transform: rotate(270deg);
+}
+
+.category-right-title {
+    margin-left: 18px;
+    margin-bottom: 30px;
+    margin-top: 7px;
+}
+.category-left-title a:hover, .category-right-title a:hover {
+    color: #000;
+}
+.all-category-link {
+    margin-left: -2%;
+}
+
+.category-link {
+    display: inline-block;
+    width: 31.3333%;
+    float: left;
+    background-color: #ff626b;
+    color: #fff;
+    height: 70px;
+    margin-bottom: 15px;
+    margin-left: 2%;
+    text-align: center;
+    padding: 14px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.category-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+ /* =====================
+Banner CSS
+ ========================*/
+
+.banner-bg-1{ background-image:url(../img/banner-bg.jpg);}
+
+
+.banner-overlay {
+    position: relative;
+    z-index: 1;
+    height:280px;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+}
+.banner-overlay:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    opacity:0.8;
+    transition:.3s;
+    visibility:visible;
+}
+.banner-overlay:hover:before{
+    visibility:hidden;
+    opacity:0;
+}
+
+.banner-overlay:before{
+    background: #f8aba1;
+background: -moz-linear-gradient(-45deg, #f8aba1 0%, #b4915b 100%);
+background: -webkit-linear-gradient(-45deg, #f8aba1 0%,#b4915b 100%);
+background: linear-gradient(135deg, #f8aba1 0%,#b4915b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8aba1', endColorstr='#b4915b',GradientType=1 );
+}
+
+
+ /* =====================
+Footer Area CSS
+ ========================*/
+.footer_absolute.share {
+    right: 100px;
+    background: #FF626B;
+    position:fixed;
+}
+
+.header_absolute.share {
+    top: 6px;
+    background: #FF626B;
+    position: relative;
+    float: right;
+    right: 140px;
+}
+
+.header_absolute.share img.facebook, 
+.header_absolute.share img.twitter, 
+.header_absolute.share img.linkedin, 
+.header_absolute.share img.google_plus {
+    width:50px;
+    display:none;
+}
+
+.header_absolute.share {
+    display: none;
+}
+
+.social_links {
+    margin-top: 20px;
+}
+
+.footer_absolute, .header_absolute {
+    position: fixed;
+    right: 30px;
+    bottom: 32px;
+    z-index: 9;
+}
+
+.footer_absolute, .header_absolute {
+    width: 60px;
+    display: inline-block;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.social_icon {
+    right: 100px;
+    display: none;
+    position: fixed;
+    width: 60px;
+}
+
+.social_icon img {
+    display: none;
+}
+
+.social_icon img.facebook {
+    position: absolute;
+    top: 23px;
+    left: -50px;
+    width: 40px;
+}
+
+.social_icon img.twitter {
+    position: absolute;
+    top: -35px;
+    width: 40px;
+    left: -40px;
+}
+.social_icon img.linkedin {
+    position: absolute;
+    width: 40px;
+    top: -56px;
+    left: 10px;
+}
+
+.social_icon img.google_plus {
+    position: absolute;
+    width: 40px;
+    top: -44px;
+    right: -40px;
+}
+
+  /* =====================
+Offcanvas Menu CSS
+ ========================*/
+.offcanvas-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align:center;
+}
+
+.offcanvas-menu {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    z-index: 99;
+    background: transparent;
+    padding: 0px 50px;
+    transition: .3s;
+    left: -350px;
+    top: 101px;
+
+}
+.offcanvas-menu.active{
+    left:0;
+}
+
+.offcanvas-menu ul li a {
+    display: block;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s;
+    position: relative;
+    transition: .3s;
+}
+
+.offcanvas-menu ul li {
+    margin-bottom:15px;
+}
+
+.offcanvas-menu ul li img {
+    width: 50px;
+}
+
+.offcanvas-menu ul li.active a:after, .offcanvas-menu ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+.offcanvas-menu ul li.active a, .offcanvas-menu ul li a:hover {
+    color: #fe6a60;
+}
+
+.offcanvas-menu ul li:hover .offcanvas_1 {
+    display: none;
+}
+/*
+.offcanvas-menu ul li:hover a span {
+    display: none;
+}*/
+
+.offcanvas-menu ul li:hover img.offcanvas_2 {
+    display: inline-block;
+}
+
+.offcanvas-menu li span {
+    display: none;
+}
+
+.offcanvas-menu ul li .offcanvas_2 {
+    display: none;
+}
+
+.offcanvas-close-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #333;
+    font-size: 17px;
+    padding: 5px 10px;
+}
+.offcanvas-menu-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 98;
+    opacity: .4;
+    transition: .3s;
+    left: -100%;
+    visibility: hidden;
+}
+.offcanvas-menu-overlay.active{
+    left:0;
+    visibility:visible;
+}
+
+
+
+ /* =====================
+Footer Absolute CSS
+ ========================*/
+.footer_absolute.share {
+    right: 100px;
+    background: #FF626B;
+    position:fixed;
+}
+
+.header_absolute.share {
+    top: 6px;
+    background: #FF626B;
+    position: relative;
+    float: right;
+    right: 140px;
+}
+
+.header_absolute.share img.facebook, 
+.header_absolute.share img.twitter, 
+.header_absolute.share img.linkedin, 
+.header_absolute.share img.google_plus {
+    width:50px;
+    display:none;
+}
+
+.header_absolute.share {
+    display: none;
+}
+
+.social_links {
+    margin-top: 20px;
+}
+
+.footer_absolute, .header_absolute {
+    position: fixed;
+    right: 30px;
+    bottom: 32px;
+    z-index: 9;
+}
+
+.footer_absolute, .header_absolute {
+    width: 60px;
+    display: inline-block;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.social_icon{
+    right: 100px;
+    display: none;
+    position: fixed;
+    width: 60px;
+}
+
+.social_icon img {
+    display: none;
+}
+
+.social_icon img.facebook {
+    position: absolute;
+    top: 23px;
+    left: -50px;
+    width: 40px;
+}
+
+.social_icon img.twitter {
+    position: absolute;
+    top: -35px;
+    width: 40px;
+    left: -40px;
+}
+.social_icon img.linkedin {
+    position: absolute;
+    width: 40px;
+    top: -56px;
+    left: 10px;
+}
+
+.social_icon img.google_plus {
+    position: absolute;
+    width: 40px;
+    top: -44px;
+    right: -40px;
+}
+ /* =====================
+Preloader CSS
+ ========================*/
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.template-preloader-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.template-preloader-wrap .spinner {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-color: #fff;
+}
+
